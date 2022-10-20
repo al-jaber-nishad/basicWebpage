@@ -1,0 +1,23 @@
+
+#profile-page .single-row{
+  margin: 1.3rem;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #DEE5E7;
+}
+
+.user_info .form-section-title{
+  color: #494949;
+  font-size: 14px;
+}
+
+.user_info .row{
+  margin: 10px 5px;
+}
+
+.user_info .control-label{
+  text-align: right;
+  color: #494949;
+  font-size: 14px;
+  margin-right: 10px;
+}

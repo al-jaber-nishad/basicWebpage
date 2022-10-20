@@ -1,0 +1,94 @@
+
+
+
+.single-row{
+  margin: 1.3rem;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #DEE5E7;
+}
+.single-row hr{
+  margin: 0;
+}
+
+.single-row .top-text{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  color: #58666E;
+}
+.account-stats .top-text .left{
+  float: left;
+}
+.btn-success-shrink{
+  background-color: #27C24C;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-success-shrink:hover{
+  background-color: #22af43;
+}
+
+.account-stats .top-text .right{
+  flood-opacity: right;
+}
+.account-stats .chart-div{
+  text-align: center;
+  margin-bottom: 15px;
+  position: relative;
+}
+.account-stats .chart-div span{
+  color:rgb(0, 0, 0);
+}
+
+
+#home .account-stats .row{
+  position: relative;
+}
+
+#home .account-stats .row canvas{
+  padding: 25px;
+}
+
+
+.map-div .gmap_canvas{
+  text-align: center;
+  align-items: center;
+}
+
+.map-div .m-lg-5{
+  margin: 0;
+  align-items: center;
+  text-align: center;
+}
+
+.gmap_canvas{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  }
+  .gmap_canvas iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  }
+
+/* Gauge Chart Canvas */
+#home #gauge_value {
+  color:#000;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left:50%;
+  font-size:1.5rem;
+  text-align:center;
+  font-weight:700;
+}

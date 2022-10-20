@@ -1,0 +1,109 @@
+
+
+
+#view-device .device-overview .row{
+  margin: 10px 5px;
+}
+
+#view-device .chart-switch-btn{
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: .8rem;
+  
+  /* box-shadow: 0px 1px 5px black; */
+}
+#view-device .chart-switch-btn:hover{
+  box-shadow: 0px .2px 2px black;
+  cursor: pointer;
+}
+#view-device .device-overview .col-md-6{
+  padding: 0 8px;
+}
+
+/* Gauge Chart Canvas */
+#view-device #gauge_value {
+  color:#000;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 80%;
+  left:50%;
+  font-size: 3rem;
+  text-align:center;
+  font-weight:700;
+}
+
+
+#view-device .device-overview .padder-v{
+  padding: 15px 0;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: normal;
+}
+#view-device .device-overview a:hover{
+  text-decoration: none;
+}
+#view-device .device-overview .padder-v.temperature{
+  background-color: #fff;
+  color: #1F8EFE;
+}
+#view-device .device-overview .padder-v.humidity{
+  background-color: #1F8EFE;
+  color: #fff;
+}
+#view-device .device-overview .padder-v.co2{
+  background-color: #23B7E5;
+  color: #fff;
+}
+#view-device .device-overview .padder-v.ethylene{
+  background-color: #F05050;
+  color: #fff;
+}
+#view-device .device-overview .padder-v.last-connection{
+  background-color: #fff;
+  color: #000;
+}
+#view-device .device-overview .padder-v .text-xs{
+  color: #fff;
+}
+.device-overview .mapouter{
+  padding-top: 12px;  
+}
+
+.device-overview .gmap_canvas{
+  padding: 2px;
+  background-color: #fff;
+  position: relative;
+  margin-right: 15px;
+  height: 320px;
+  width: 100%;
+  border-radius: 3px;
+}
+#view-device .single-row .panel-body .canvas-panel{
+  /* padding: 20px; */
+}
+#view-device .single-row .panel-body .canvas-panel canvas{
+  background-color: #fff9;
+  padding: 15px 35px;
+  position: relative;
+  max-height: 310px;
+  width: 100%;
+  margin-top: 20px;
+  overflow-y: auto;
+  border: 1px solid rgb(234, 234, 234);
+}
+
+
+/* Gauge Chart Canvas */
+/* #view-device #gauge_value {
+  color:#000;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 70%;
+  left:50%;
+  font-size:2rem;
+  text-align:center;
+  font-weight:700;
+} */

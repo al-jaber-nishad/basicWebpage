@@ -1,0 +1,92 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<div id="userpage">
+  User Email: {{ user.email }}
+  <br /><br />
+  
+
+
+  <div>
+    <div>
+      <div>
+        <div class="single-row">
+          
+          <!-- title bar ends -->
+          <div class="panel-body">
+            <div>
+              <form
+                name="add_device_form"
+                class="add-item"
+                action=""
+                method="POST"
+              >
+                {% csrf_token %}
+                <fieldset>
+                  <!-- {{ form.as_p }} -->
+                  {% for field in form.visible_fields %}
+                  <div class="form-group">
+                    {{ field.errors }}
+                    {{ field.label_tag }}
+                    {{ field }}
+                  </div>
+                  {% endfor %}
+                </fieldset>
+                <button type="submit" class="btn btn-primary btn-block">Register</button>
+                {% comment %} <fieldset>
+                  <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-10">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-2 control-label">
+                      Device ID:
+                    </div>
+                    <div class="col-sm-8">
+                      {{ form.deviceID }}
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-2 control-label">
+                      Region:
+                    </div>
+                    <div class="col-sm-8">
+                    </div>
+                    <select id="task" name="task" class="task-dropdown" style="width:400px;">
+                      {% for task in form.region %}
+                             <option value="{{ task.id }}">{{ task }}</option>
+                      {% endfor %}
+                   </select>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-2 control-label">Setting</div>
+                    <div class="col-sm-8">
+                      {{ form.setting }}
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-2 control-label">MQTT User</div>
+                    <div class="col-sm-8">
+                      {{ form.mqttuser }}
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-2 control-label">MQTT Password</div>
+                    <div class="col-sm-8">
+                      {{ form.mqttpass }}
+                    </div>
+                  </div>
+                  
+                </fieldset> {% endcomment %}
+                
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock content %}

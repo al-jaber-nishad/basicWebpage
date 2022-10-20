@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<div id="home">
+  this is Home Page.
+  <br>
+  <a href="{% url 'userpage' %}">User Page</a>
+  <br>
+  <a href="{% url 'setting' %}">Setting</a>
+</div>
+
+
+{% endblock content %}

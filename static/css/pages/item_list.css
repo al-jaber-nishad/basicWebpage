@@ -1,0 +1,49 @@
+
+
+#item-list .single-row{
+  margin: 1.3rem;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #DEE5E7;
+}
+
+.single-row .top-text .add-item{
+  background-color: #25b346;
+  color: white;
+  padding: 6px 20px;
+  border-radius: 4px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.single-row .title-text{
+  padding: 10px 15px;
+  font-size: 15px;
+  color: #333333;
+  background-color: #F6F8F8;
+  border: 1px solid #EDF1F2;
+
+}
+.single-row table{
+  margin-bottom: 20px;
+}
+table thead th{
+  font-size: 15px;
+  color: #58666E;
+}
+
+.single-row tbody td{
+  font-size: 15px;
+  color: #58666E;
+}
+.single-row tbody tr td a{
+  color: #0e164e;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.single-row tbody tr td a:hover{
+  text-decoration: none;
+}

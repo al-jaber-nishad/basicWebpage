@@ -1,0 +1,26 @@
+
+.sign-up{
+  margin-top: 10px;
+}
+
+
+
+/* Home Page Styles */
+
+.home-page-body{
+  padding: 1rem 2rem;
+  z-index: 1;
+}
+.home-page-body .title{
+  padding-block-end: 1rem;
+}
+
+/* Log In page */
+
+.login-container{
+  height: 100vh;
+}
+
+.log-div{
+  margin-top: -60px;
+}

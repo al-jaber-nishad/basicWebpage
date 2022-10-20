@@ -1,0 +1,32 @@
+
+
+.add-item .form-section-title{
+  color: #494949;
+  font-size: 14px;
+}
+
+.add-item .row{
+  margin: 10px 5px;
+}
+
+.add-item .control-label{
+  text-align: right;
+  color: #494949;
+  font-size: 14px;
+  padding-right: 15px;
+}
+
+.add-device-footer{
+  padding: 10px 15px;
+  background-color: #F6F8F8;
+}
+
+.add-device-footer button{
+  background-color: #25b346;
+  color: white;
+  padding: 6px 20px;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}

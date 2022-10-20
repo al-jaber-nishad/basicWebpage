@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <!-- Google Font link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <!-- CSS links -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+  </head>
+  <body>
+    <!-- Main Contents -->
+    <div class="main-content" id="main-content">
+      <div class="contents">
+
+        {% block content %} {% endblock content %}
+      </div>
+    </div>
+
+    <!-- End of Main Contents -->
+    
+
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>

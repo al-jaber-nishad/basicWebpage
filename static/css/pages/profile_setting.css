@@ -1,0 +1,11 @@
+
+#profile-setting .single-row{
+  margin: 1.3rem;
+  /* background-color: #fff; */
+  border-radius: 5px;
+  border: 1px solid #DEE5E7;
+}
+
+#profile-setting .panel-body fieldset{
+  margin: 5px 20px;
+}
