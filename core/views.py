@@ -90,7 +90,7 @@ def setting(request):
       # mydb.commit()
       cursor_data = mycursor.fetchall()
 
-      print(cursor_data)
+      print("Minimum on today: ",cursor_data)
 
 
       
@@ -104,14 +104,14 @@ def setting(request):
   # cheapest_hour_of_day = 
   # print(today)
   username = request.user.username
-  sql = "SELECT MIN("+current_region+") FROM core_nordpool"
+  sql = "SELECT "+current_region+" FROM nordpool WHERE Date='"+today+"'"
 
   mycursor.execute(sql)
 
   # mydb.commit()
   cursor_data = mycursor.fetchall()
   cheapest_hour_of_day = min(cursor_data)
-  print(cheapest_hour_of_day)
+  print("Cheapest hour of the day", cheapest_hour_of_day)
   # column_names = column_names[3:]
 
   form = SearchForm()
