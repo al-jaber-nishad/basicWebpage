@@ -1,13 +1,18 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 
 <div id="home">
-  User Email is: {{ useremail }}
-  <br /><br />
-
+  
   <div>
+    User Email is: {{ useremail }}
+    <br /><br />
     <div>
-      <div>
-        <div class="single-row">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="btn btn-lg btn-outline-success">
+            Add New Device
+          </div>
+        </div>
+        <div class="single-row col-md-8">
           <!-- title bar ends -->
           <div class="panel-body">
             <div>
@@ -25,7 +30,6 @@
                   </div>
                   {% endfor %}
                 </fieldset>
-
 
                 <button class='btn btn-block'>
                   <a href="{% url 'setting' %}">Setting Page</a>

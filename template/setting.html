@@ -1,10 +1,14 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 
 <div id="setting">
-  <button>
+  <button class="btn btn-primary">
     <a href="{% url 'home' %}">Home</a>
   </button>
   <div>
+    <div>
+      <p>Your Selected Region is: {{ current_region }}</p>
+      <p>Today's date: {{ today }}</p>
+    </div>
     <p>Cheapest Value of today is: {{ cheapest_val_of_day}}</p>    
     <table>
       {% for item in cheapest_hour_of_day %}

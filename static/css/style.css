@@ -1,11 +1,21 @@
 
 
 #home{
-  padding: 10%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 7%;
 }
 
 #setting{
-  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7%;
 }
 
 .sign-up{

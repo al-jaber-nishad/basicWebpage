@@ -130,7 +130,8 @@ def setting(request):
     "pageTitle": "Setting",
     'cheapest_val_of_day': cheapest_val_of_day,
     'cheapest_hour_of_day': cheapest_hour_of_day,
+    'current_region': current_region,
+    'today': today,
     'form': form,
-
   }
   return render(request, 'setting.html', context)
