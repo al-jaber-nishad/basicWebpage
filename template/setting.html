@@ -1,10 +1,11 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 
 <div id="setting">
+  <button>
+    <a href="{% url 'home' %}">Home</a>
+  </button>
   <div>
-    <p>Cheapest Value of today is: {{ cheapest_val_of_day}}</p>
-    <p>Cheapest Hour of today is: {{ cheapest_hour_of_day}}</p>
-    
+    <p>Cheapest Value of today is: {{ cheapest_val_of_day}}</p>    
     <table>
       {% for item in cheapest_hour_of_day %}
         <tr>
@@ -17,7 +18,7 @@
       
   </div>
   <div>
-    <p>Please keep the number betweeb 0-24.</p>
+    <p>Please keep the number between 0-24.</p>
   </div>
 
   <form name="SearchForm" class="" action="" method="POST">
