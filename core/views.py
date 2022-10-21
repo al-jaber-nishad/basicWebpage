@@ -110,7 +110,7 @@ def setting(request):
 
   # mydb.commit()
   cursor_data = mycursor.fetchall()
-  cheapest_hour_of_day = cursor_data
+  cheapest_hour_of_day = cursor_data.sort()
   print("Cheapest hour of the day", cheapest_hour_of_day)
   # column_names = column_names[3:]
 
