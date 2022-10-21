@@ -79,7 +79,7 @@ def setting(request):
       print(today, time_hr, current_time)
       print('test')
       
-      sql = "SELECT * FROM core_nordpool WHERE Date='"+today+"'"
+      sql = "SELECT * FROM nordpool WHERE Date='"+today+"'"
 
       # AND ('"+time_hr+"' >= Hour AND '"+current_time+"' <= Hour) 
 
