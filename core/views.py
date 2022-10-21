@@ -114,14 +114,17 @@ def setting(request):
   cheapest_val_of_day = cursor_data
   print("Cheapest val of the day", cheapest_val_of_day)
   # column_names = column_names[3:]
+  mycursor.close()
 
 
+  mycursor = mydb.cursor()
   mycursor.execute(sql2)
   # mydb.commit()
   cursor_data = mycursor.fetchall()
   cheapest_hour_of_day = cursor_data
   print("Cheapest hour of the day", cheapest_hour_of_day)
 
+  
   form = SearchForm()
   context={
     "pageTitle": "Setting",
