@@ -5,9 +5,15 @@
     <p>Cheapest Value of today is: {{ cheapest_val_of_day}}</p>
     <p>Cheapest Hour of today is: {{ cheapest_hour_of_day}}</p>
     
-    {% for item in cheapest_hour_of_day %}
-      {{ item }}
-    {% endfor %}
+    <table>
+      {% for item in cheapest_hour_of_day %}
+        <tr>
+          <td>{{ item }}</td>
+        </tr>
+      {% endfor %}
+      
+    </table>
+    
       
   </div>
   <div>
