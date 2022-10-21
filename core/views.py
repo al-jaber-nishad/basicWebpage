@@ -58,7 +58,7 @@ def setting(request):
       host="localhost",
       user="user1", 
       password="asdf",
-      database="SmartPlugDBs"
+      database="SmartPlugDB"
   )
 
   mycursor = mydb.cursor()
