@@ -18,6 +18,10 @@
   padding-top: 7%;
 }
 
+#setting a{
+  color: #fff;
+  padding-bottom: 3px;
+}
 .sign-up{
   margin-top: 10px;
 }
