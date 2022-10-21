@@ -66,6 +66,9 @@ def setting(request):
   t = time.localtime()
   current_time = str(time.strftime("%H", t))
 
+  current_region = Device.objects.filter(username=request.user.username).values()[0]['region']
+  print(current_region)
+
   today = str(date.today())
   
 
@@ -79,7 +82,7 @@ def setting(request):
       print(today, time_hr, current_time)
       print('test')
       
-      sql = "SELECT * FROM nordpool WHERE Date='"+today+"'"
+      sql = "SELECT MIN("+current_region+") FROM nordpool WHERE Date='"+today+"'"
 
       # AND ('"+time_hr+"' >= Hour AND '"+current_time+"' <= Hour) 
 
@@ -96,9 +99,6 @@ def setting(request):
       return render(request, 'home.html')
   
 
-
-  current_region = Device.objects.filter(username=request.user.username).values()[0]['region']
-  print(current_region)
   
 
   # cheapest_hour_of_day = 
