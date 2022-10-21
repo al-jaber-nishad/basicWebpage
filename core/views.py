@@ -105,7 +105,7 @@ def setting(request):
   # print(today)
   username = request.user.username
   sql = "SELECT MIN("+current_region+") FROM nordpool WHERE Date='"+today+"'"
-  sql2 = "SELECT Hour FROM nordpool WHERE (Date='"+today+"' AND "+current_region+"=MIN("+current_region+"))"
+  sql2 = "SELECT Date, Hour, "+current_region+" FROM nordpool WHERE Date='"+today+"'"
 
   mycursor.execute(sql)
 
