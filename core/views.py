@@ -105,18 +105,27 @@ def setting(request):
   # print(today)
   username = request.user.username
   sql = "SELECT MIN("+current_region+") FROM nordpool WHERE Date='"+today+"'"
+  sql2 = "SELECT Hour FROM nordpool WHERE (Date='"+today+"' AND "+current_region+"=MIN("+current_region+"))"
 
   mycursor.execute(sql)
 
   # mydb.commit()
   cursor_data = mycursor.fetchall()
+  cheapest_val_of_day = cursor_data
+  print("Cheapest val of the day", cheapest_val_of_day)
+  # column_names = column_names[3:]
+
+
+  mycursor.execute(sql2)
+  # mydb.commit()
+  cursor_data = mycursor.fetchall()
   cheapest_hour_of_day = cursor_data
   print("Cheapest hour of the day", cheapest_hour_of_day)
-  # column_names = column_names[3:]
 
   form = SearchForm()
   context={
     "pageTitle": "Setting",
+    'cheapest_val_of_day': cheapest_val_of_day,
     'cheapest_hour_of_day': cheapest_hour_of_day,
     'form': form,
 
