@@ -4,6 +4,11 @@
   <div>
     <p>Cheapest Value of today is: {{ cheapest_val_of_day}}</p>
     <p>Cheapest Hour of today is: {{ cheapest_hour_of_day}}</p>
+    
+    {% for item in cheapest_hour_of_day %}
+      item
+    {% endfor %}
+      
   </div>
   <div>
     <p>Please keep the number betweeb 0-24.</p>
