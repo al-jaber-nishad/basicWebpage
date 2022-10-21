@@ -104,13 +104,13 @@ def setting(request):
   # cheapest_hour_of_day = 
   # print(today)
   username = request.user.username
-  sql = "SELECT "+current_region+" FROM nordpool WHERE Date='"+today+"'"
+  sql = "SELECT MIN("+current_region+") FROM nordpool WHERE Date='"+today+"'"
 
   mycursor.execute(sql)
 
   # mydb.commit()
   cursor_data = mycursor.fetchall()
-  cheapest_hour_of_day = cursor_data.sort()
+  cheapest_hour_of_day = cursor_data
   print("Cheapest hour of the day", cheapest_hour_of_day)
   # column_names = column_names[3:]
 
