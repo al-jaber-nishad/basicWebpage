@@ -1,12 +1,48 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 
 <div id="home">
-  this is Home Page.
-  <br>
-  <a href="{% url 'userpage' %}">User Page</a>
-  <br>
-  <a href="{% url 'setting' %}">Setting</a>
-</div>
+  User Email is: {{ useremail }}
+  <br /><br />
 
+  <div>
+    <div>
+      <div>
+        <div class="single-row">
+          <!-- title bar ends -->
+          <div class="panel-body">
+            <div>
+              <form
+                name="add_device_form"
+                class="add-item"
+                action=""
+                method="POST"
+              >
+                {% csrf_token %}
+                <fieldset>
+                  {% for field in form.visible_fields %}
+                  <div class="form-group">
+                    {{ field.errors }} {{ field.label_tag }} {{ field }}
+                  </div>
+                  {% endfor %}
+                </fieldset>
+
+
+                <button class='btn btn-block'>
+                  <a href="{% url 'setting' %}">Setting Page</a>
+                </button>
+              
+                <button type="submit" class="btn btn-primary btn-block">
+                  Add Device
+                </button>
+                
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% endblock content %}

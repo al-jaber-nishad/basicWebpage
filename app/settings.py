@@ -89,7 +89,8 @@ DATABASES = {
     # }
     'default': {  
         'ENGINE': 'django.db.backends.mysql',  
-        'NAME': 'dev',  
+        'NAME': 'SmartplugDB',  
+        # 'NAME': 'dev',
         'USER': 'user1',  
         'PASSWORD': 'asdf',  
         'HOST': '127.0.0.1', 
@@ -158,3 +159,14 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 # LOGIN_REDIRECT_URL = '/registration/profile/'
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'home'
+
+
+
+
+# user email
+# redirect userpage.
+# setting button in userpage
+# SYS to NL
+# crrent day er cheapest hour
+# maximum 24 hours query hobe..
+
